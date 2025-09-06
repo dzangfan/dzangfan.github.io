@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
   </header>
   <body>
-    <h1>Zhangfan Li</h1>
+    <h1>Zhangfan Li (李 張帆)</h1>
 
     <p>I am a master's student at <a href="https://www.logic.cs.tsukuba.ac.jp/index.html">Programming Logic Lab.</a>, <a href="https://www.tsukuba.ac.jp/">University of Tsukuba</a>. I am interested in the theory and application of metaprogramming, especially those about multi-stage programming.</p>
 
@@ -19,14 +19,30 @@
     <h2>Talks</h2>
     <ul>
       <li>
-	<div>
+	<div id = "JSSST2025">
           Fusion for Metaprogramming: Eliminating Intermediate Programs in Code Generation and Analysis<br/>
 	  <strong>Zhangfan Li</strong>, Yukiyoshi Kameyama<br/>
-	  To be presented on September 5, 2025.<br/>
-	  The 42nd Japan Society for Software Science and Technology Annual Conference (JSSST2025)<br/>
-	  <a href="https://dzangfan.github.io/JSSST2025.pdf">Résumé</a> (last updated on 2025/09/01)
+	  Presented on September 5, 2025.<br/>
+	  The 42nd Japan Society for Software Science and Technology Annual Conference (<a href="https://jssst2025.wordpress.com">JSSST2025</a>)<br/>
+	  <a href="https://dzangfan.github.io/JSSST2025.pdf">Résumé</a> (last updated on 2025/09/01) <a href="https://dzangfan.github.io/JSSST2025-S.pdf">Slide</a>
 	</div>
       </li>
     </ul>
   </body>
+  <script>
+    
+    const highlightLocation = function () {
+	const hash = document.location.hash;
+	const hash_re = /#(\w+)/;
+	const match = hash.match(hash_re);
+	if (match != null) {
+	    const id = match[1];
+	    const div = document.getElementById(id);
+	    if (div != null) {
+		div.style.cssText = "background: #F5F5D7";
+	    }
+	}
+    };
+    document.addEventListener('DOMContentLoaded',highlightLocation);
+  </script>
 </html>
