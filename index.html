@@ -2,6 +2,11 @@
   <header>
     <title>Zhangfan Li</title>
     <meta charset="UTF-8">
+    <style>
+      :target {
+	  background-color: #F5F5D7;
+      }
+    </style>
   </header>
   <body>
     <h1>Zhangfan Li (李 張帆, リー チャンフェン)</h1>
@@ -29,20 +34,4 @@
       </li>
     </ul>
   </body>
-  <script>
-    
-    const highlightLocation = function () {
-	const hash = document.location.hash;
-	const hash_re = /#(\w+)/;
-	const match = hash.match(hash_re);
-	if (match != null) {
-	    const id = match[1];
-	    const div = document.getElementById(id);
-	    if (div != null) {
-		div.style.cssText = "background: #F5F5D7";
-	    }
-	}
-    };
-    document.addEventListener('DOMContentLoaded',highlightLocation);
-  </script>
 </html>
