@@ -37,7 +37,7 @@
               #:venue venue #:venue-short short #:venue-url url
               #:award [award #f] #:links [links '()] #:id [id short])
   (entry #:id id
-         (if award (list (bold "(" award ")") " " title) title)
+         (if award (list (elem "(" award ")") " " title) title)
          (elem (author-list authors) "; " (format "Presented on ~a." date))
          (venue-line venue short url)
          (and (pair? links) (add-between links " "))))
