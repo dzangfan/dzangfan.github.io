@@ -12,3 +12,7 @@
    Separate rules, so browsers without :has() still highlight the <p>. */
 :target { background-color: #F5F5D7; }
 li:has(> p:target) { background-color: #F5F5D7; }
+
+/* The manual style shrinks the base font on narrow screens (down to 10px);
+   keep it readable on phones instead. */
+@media all and (max-width: 720px) { html { font-size: 15px; } }
