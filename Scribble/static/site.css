@@ -1,0 +1,14 @@
+/* Hide the collapsible "▸ Zhangfan Li" box at the top of the sidebar; the
+   list below it already links to the title and every section. */
+.tocview { display: none; }
+
+/* Bigger sidebar links, with a bit more room between them. */
+.tocsub td { font-size: 1.2rem; }
+.tocsublist td { padding-top: 0.5rem; }
+.tocsubseclink:hover { text-decoration: underline; }
+
+/* Highlight the publication or talk named in the URL, e.g. /#JSSST2025.
+   The id is on the <p> inside the <li>; :has() extends it to the bullet.
+   Separate rules, so browsers without :has() still highlight the <p>. */
+:target { background-color: #F5F5D7; }
+li:has(> p:target) { background-color: #F5F5D7; }
