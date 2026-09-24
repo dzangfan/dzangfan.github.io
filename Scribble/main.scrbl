@@ -10,6 +10,13 @@
 
 I am a first-year Ph.D. student at @hyperlink["https://www.logic.cs.tsukuba.ac.jp/index.html"]{Programming Logic Lab.}, @hyperlink["https://www.tsukuba.ac.jp/"]{Univ. of Tsukuba}, supervised by @hyperlink["https://www.cs.tsukuba.ac.jp/~kam"]{Yukiyoshi Kameyama}. My research interests are in the foundation and application of reliable metaprogramming.
 
+@margin-note{
+ @itemlist[
+ @item{@bold{Domain-specific optimizations:} General-purpose compilers (@tt{clang}, @tt{javac}, etc.) perform only limited optimizations, as they lack domain-specific awareness of their workloads such as neural networks, robotic control systems, or encryption algorithms. I am interested in case studies of @italic{multi-stage programming} to perform advanced, application-tailored optimizations.}
+ @item{@bold{Robust foundations of metaprogramming:} Once you admit the value of metaprogramming, you will find that popular metaprogramming techniques --- such as macros in C, Rust and Lisps --- are often ad hoc and error-prone. I am interested in developing sound infrastructures for metaprogramming.}
+ @item{@bold{Implementation of metaprogramming systems:} Theoretical developments  of multi-stage programming have frequently outpaced their implementations. I am interested in bridging this gap by integrating the theory into practical programming languages.}]
+}
+
 @itemlist[
  @item{@bold{E-mail} (@"@"acm.org): zhangfan.li}
  @item{@bold{GitHub}: @hyperlink["https://github.com/dzangfan"]{dzangfan}}]
