@@ -8,6 +8,7 @@
 
 @title[#:tag "top" #:version ""]{Zhangfan Li@title-aside[#:gap "0.6em" @name-ruby["李" "リー"]@name-ruby["張" "チャン"]@name-ruby["帆" "フェン"]]}
 
+@nested[#:style "intro"]{
 @margin-note{
  @image["../Li-in-lab.jpeg" #:style "portrait"]{Zhangfan Li in the lab}
  @para[#:style "photo-credit"]{Photo by @hyperlink["https://areknot.github.io"]{Kentaro Kobayashi}: @italic{You only continue once.}}
@@ -15,7 +16,7 @@
  @item{@bold{E-mail} (@"@"acm.org): zhangfan.li}
  @item{@bold{GitHub}: @hyperlink["https://github.com/dzangfan"]{dzangfan}}]}
 
-I am a first-year Ph.D. student at @hyperlink["https://www.logic.cs.tsukuba.ac.jp/index.html"]{Programming Logic Lab.}, @hyperlink["https://www.tsukuba.ac.jp/"]{Univ. of Tsukuba}, supervised by @hyperlink["https://www.cs.tsukuba.ac.jp/~kam"]{Yukiyoshi Kameyama}. My research interests are in the foundation and application of reliable metaprogramming.
+I am a first-year Ph.D. student at @hyperlink["https://www.logic.cs.tsukuba.ac.jp/index.html"]{Programming Logic Lab.}, @hyperlink["https://www.tsukuba.ac.jp/"]{Univ. of Tsukuba}, supervised by @hyperlink["https://www.cs.tsukuba.ac.jp/~kam"]{Yukiyoshi Kameyama}. My research interests are in the foundation and application of reliable metaprogramming.}
 
 @margin-note{
  @centered{@larger{Research Interests}}

@@ -23,6 +23,9 @@ img.portrait { width: 100%; height: auto; display: block; }
 p.photo-credit { margin: 0.3em 0 0; font-size: 0.75em; color: #666; }
 ul.contacts { margin: 0.6em 0 0; padding-left: 1.2em; }
 
+/* The bio and the photo's note share a wrapper so phones can reorder them. */
+blockquote.intro { margin: 0; }
+
 /* Below 1340px, the manual style turns a margin-note into a full-width block
    in the main column, which blows the photo up to the column's width. Float
    the photo's note to the right instead, and start the next margin-note below
@@ -36,7 +39,9 @@ ul.contacts { margin: 0.6em 0 0; padding-left: 1.2em; }
   .refcolumn { clear: right; margin-left: 0; margin-right: 0; }
 }
 
-/* On phones, stack the photo's note above the text at full width again. */
+/* On phones, stack the bio first, then the photo's note at full width. */
 @media all and (max-width: 600px) {
   .refcolumn:has(img.portrait) { float: none; width: auto; margin: 1rem 0; }
+  blockquote.intro { display: flex; flex-direction: column; }
+  blockquote.intro > .refpara { order: 1; }
 }
