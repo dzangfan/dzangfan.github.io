@@ -16,3 +16,27 @@ li:has(> p:target) { background-color: #F5F5D7; }
 /* The manual style shrinks the base font on narrow screens (down to 10px);
    keep it readable on phones instead. */
 @media all and (max-width: 720px) { html { font-size: 15px; } }
+
+/* Homepage photo: fill the margin-note it sits in, with the contact list
+   right below it. */
+img.portrait { width: 100%; height: auto; display: block; }
+p.photo-credit { margin: 0.3em 0 0; font-size: 0.75em; color: #666; }
+ul.contacts { margin: 0.6em 0 0; padding-left: 1.2em; }
+
+/* Below 1340px, the manual style turns a margin-note into a full-width block
+   in the main column, which blows the photo up to the column's width. Float
+   the photo's note to the right instead, and start the next margin-note below
+   it rather than beside it, flush with the column's edges like the photo. */
+@media all and (max-width: 1340px) {
+  .refcolumn:has(img.portrait) {
+    float: right;
+    width: 40%;
+    margin: 0 0 1rem 1.5rem;
+  }
+  .refcolumn { clear: right; margin-left: 0; margin-right: 0; }
+}
+
+/* On phones, stack the photo's note above the text at full width again. */
+@media all and (max-width: 600px) {
+  .refcolumn:has(img.portrait) { float: none; width: auto; margin: 1rem 0; }
+}
