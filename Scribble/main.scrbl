@@ -36,7 +36,7 @@ I am a first-year Ph.D. student at @hyperlink["https://www.logic.cs.tsukuba.ac.j
    #:authors '("Zhangfan Li" "Yukiyoshi Kameyama")
    #:venue @elem{The 24@superscript{th} Asian Symposium on Programming Languages and Systems}
    #:venue-short "APLAS2026" #:venue-url "https://conf.researchr.org/track/aplas-atva-2026/aplas-2026"
-   #:links (list (file-link "Paper" "https://dzangfan.github.io/APLAS2026.pdf" #:updated "2026-09-06"))]]
+   #:links (list (file-link "Postprint" "https://dzangfan.github.io/APLAS2026.pdf" #:updated "2026-09-06"))]]
 
 @section[#:tag "talks" #:style 'unnumbered]{Talks}
 
